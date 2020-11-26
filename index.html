@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge" />
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+			integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="style.css" />
+		<title>Tictactoe App</title>
+	</head>
+	<body>
+		<style class="logo">
+			body {
+			  background-color:black;
+			  background-repeat: no-repeat;
+			  background-attachment: fixed;
+			  background-size: 100% 100%;
+			}
+		</style>
+		<section id="start-select">   
+			<div id = "animations">
+			  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			  <lottie-player class="lotty_1" src="https://assets8.lottiefiles.com/packages/lf20_jsmSHj.json"  background="#000000"  speed="1"  style="width: 100%; height: 700px;"  loop  autoplay></lottie-player>
+
+			  <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+			  <lottie-player class="lotty_2" src="https://assets6.lottiefiles.com/packages/lf20_s3PG4r.json" mode="bounce" background="transparent"  speed="1"  style="width: 100%; height:300px;"  loop  autoplay></lottie-player>
+
+			</div>
+		<div class="join-container">
+			<h3 class="ti">TIC TAC TOE</h3>
+			<div class="join-main">
+				<form action="tictactoe.html">
+					<div class="form-control">
+						<label for="username" id = "User">Username</label>
+						<input
+							type="text"
+							name="username"
+							id="username"
+							placeholder="Enter username..."
+							required
+						/>
+					</div>
+					<div class="form-control">
+						<button id="new">Join New Game</button>  
+                    </div>
+                    <div class="form-control">
+						<h4>Join an existing game</h4>
+						<label for="room">Room Number</label>
+						<input name="room" id="room"/>
+                        <button   id = "submit">Start Existing Game </button>
+                    </div>
+                    
+				</form>
+			</div>
+		</div>
+		</section>
+	</body>
+</html>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>WebScockets 101</title>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/1.7.3/socket.io.js"></script>
+        <link rel = "stylesheet" href="./style.css">
+    </head>
+    <body>
+      
+      <style>
+        body {background-image:url("./download.gif");
+        background-repeat: no-repeat;
+        background-size: 100%;
+        z-index: -1;
+              }
+      </style>
+      <div id = "animate">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player class="astro" src="https://assets9.lottiefiles.com/animated_stickers/lf_tgs_6fzdmz9y.json" mode="bounce" background="transparent"  speed="1"  style="width: 100%; height:400px;"  loop  autoplay></lottie-player>
+<lottie-player class="vent" src="https://assets9.lottiefiles.com/animated_stickers/lf_tgs_2a9xxigy.json" mode="bounce" background="transparent"  speed="1"  style="width: 100%; height:200px;"  loop  autoplay></lottie-player>
+      </div>
+      <div id="messages-sidebar">
+            <h3><i class="fas fa-comments"></i> Room Name:</h3>
+            <h2 id="room-name">1</h2>
+            <h3><i class="fas fa-users"></i> Users</h3>
+            <ul id="users"></ul>
+          </div>
+      <div id = "messages">
+        <header class="messages-container">
+          <h1><i class="fas fa-smile"></i> TIC TAC TOE</h1>
+        </header>
+        
+        <main class="messages-main">
+          <div id = "messages-display" class = "output"> </div>
+          
+        </main>
+
+      </div>
+      <section id="main-section" style="opacity: 0.9;">
+
+      <div id="outer-grid">
+        <section id="grid">
+          <div id="0" class="pos">
+          </div>
+          <div id="1" class="pos">
+          </div>
+          <div id="2" class="pos">
+          </div>
+          <div id="3" class="pos">
+          </div>
+          <div id="4" class="pos">
+          </div>
+          <div id="5" class="pos">
+          </div>
+          <div id="6" class="pos">
+          </div>
+          <div id="7" class="pos">
+          </div>
+          <div id="8" class="pos">
+          </div>
+        </section>
+      </div>
+    </section>
+    
+      <div class="endGame" id="winner">
+        <div id="winning-text"></div>
+        <div data-winning-message-text></div>
+      </div>
+      <div class = "exit">
+        <a href="./index.html" class="exit-btn">Leave Game</a>
+
+      </div>
+      </body>
+      <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="/socket.io/socket.io.js"></script>
+
+        <script src = './tictactoe.js'></script>
+
+</html>

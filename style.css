@@ -1,0 +1,409 @@
+
+
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+html,
+body {
+  height: 100%;
+}
+
+body {
+  background-color: #e6e9ff;
+}
+/*
+:root {
+	--dark-color-a: #667aff;
+	--dark-color-b: #7386ff;
+	--light-color: #e6e9ff;
+	--success-color: #5cb85c;
+	--error-color: #d9534f;
+}
+
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	background: var(--light-color);
+	margin: 20px;
+}
+*/
+/*
+.lotty_1 {
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding-top: 50px;
+  padding-bottom: 200px;
+  width: 100%;
+  padding-right : 250px;
+}
+
+.lotty_2 {
+  position: absolute;
+  margin-top: 10px;
+  padding-top: 50px;
+  padding-left: 300px;
+  padding-bottom: 200px;
+  margin-bottom: 300px;
+}*/
+#animations{
+  display: flex;
+}
+
+
+ul{
+  list-style: none;
+}
+/*
+.lotty_1 {
+  margin-top: 420px;
+  margin-bottom: 20px;
+  padding-top: 250px;
+  width: 100%;
+}
+
+.lotty_2 {
+  position: absolute;
+  margin-top: 0px;
+  padding-top: 0px;
+  padding-bottom: 200px;
+  margin-bottom: 300px;
+  padding-left: 30%;
+
+}*/
+.exit {
+  position: fixed;
+  bottom: 0px;
+  margin-bottom: 80px;
+
+}
+.exit-btn {
+  margin-bottom: 20px;
+  font-weight: 700;
+  background-color: #4eccb0;
+  border-radius: 8px;
+  margin: 650px;
+  padding: 15px;
+  height: 50px;
+  min-width: 55px;
+  border: none;
+  -webkit-transition: background-color 500ms; /* Safari */
+  transition: background-color 500ms;
+}
+
+.exit-btn:hover {
+  background-color: #77e0c9;
+  box-shadow: 0.5px 0.5px 5px black;
+  cursor: pointer;
+  cursor: hand;
+  -webkit-transition: background-color 300ms; /* Safari */
+  transition: background-color 300ms;
+}
+ a{
+  text-decoration: none;
+}
+#start-select {
+  position: absolute;
+  margin-top: 100px;
+  padding-top: 0px;
+  width: 100%;
+  height: 100vh;
+  z-index: 100;
+  left: 50%;
+  top: 40%;
+  transform: translate(-50%, -50%);
+}
+#start-select h3{
+  font-size: 20px;
+  text-align: center;
+}
+
+.join-container {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 350px;
+  height: 450px;
+  border-radius: 35px;
+  background-color: #ffd194;
+  box-shadow: 3px 3px 6px #70e1f5;
+}
+.btn{
+  width: 30px;
+  height: 30px;
+  margin-left: 45%;
+  padding-right: 50px;
+  background-color: ivory;
+}
+ button {
+  
+  cursor: pointer;
+    padding: 10px 30px;
+    color: #114357;
+    font-weight: 700;
+    font-stretch: semi-expanded;
+    font-family: serif;
+    opacity: 0.8;
+    border-radius: 4px;
+    text-align: center;
+    background-color: #70e1f5;
+    margin-top : 15px;
+    margin-right: 30px;
+    text-align: center;
+  
+  
+  
+}
+
+
+button:hover {
+  opacity: 1;
+  background-color: #86effd;
+}
+#main-section {
+  margin-top: 120px;
+  width : 350px;
+  height: 350px;
+  overflow: hidden;
+  bottom: 0px;
+  margin-left : 550px;
+
+  align-items: center;
+  opacity: 1;
+  
+}
+
+
+
+  /*GRID TABLE*/
+  
+
+  
+  #outer-grid {
+    height: 300px;
+    width: 280px;
+    margin: 0 auto;
+    align-items: center;
+
+  }
+  
+  
+  #grid {
+
+    height: 100%;
+    top:0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    column-gap: 10px;
+
+    
+  }
+  
+  #grid div {
+
+    top:0px;
+    width: 70px;
+    height: 70px;
+    padding: 7px;
+    border-radius: 18px;
+    border: 3px solid white;
+    box-shadow: 2px 2px 2px blue;    
+    text-align: center;
+
+
+
+  }
+  
+  .pos
+   {
+    text-align: center;
+    background-color :white;
+    text-shadow: 1px 1px grey;
+    font-size: 55px;
+    text-align: center;
+    width: 100%;
+    border-radius: 15px;
+    border: 3px solid white;
+    box-shadow: 2px 2px 2px white;
+    /*-webkit-transition: opacity 250ms; /* Safari 
+    transition: opacity 300ms;*/
+  }
+  
+  
+  .pos:hover {
+    opacity: 0.6;
+    background-color: transparent;
+    background-color: gray;
+    
+  }
+
+  
+  
+  
+  
+   .text {
+    padding-left: 20px;
+  }
+  
+  .endGame {
+    top:100px;
+    display: flex;
+    width: 150px;
+    height: 150px;
+    
+
+  }
+.messages{
+  position: fixed;
+}
+  .messages-main{
+    margin-top: 100px;
+    border: 3px solid white;
+  position: fixed;
+    display: grid;
+    overflow: hidden;
+    width:400px;
+    height:400px;
+  right: 100px;
+  border-radius: 15px ;
+  background-color:#8cddcb;
+  position:absolute;
+  align-items:center;
+  -webkit-transition: background-color 500ms; /* Safari */
+  transition: background-color 500ms;
+  
+  }
+  
+  #messages-sidebar{
+    position : fixed;
+    top :0px;
+    left : 200px;
+    border: 3px solid blue;
+    width : 250px;
+    height: 250px;
+    border-radius: 15px;
+
+    background-color: whitesmoke;
+    
+    animation: showHide 8s infinite ;
+    animation-delay: 1.5s;
+   
+    }
+    .vent {
+      float : right;
+      position: fixed;
+      margin-top: 280px;
+      margin-right: 500px;
+      margin-left: 400px;
+    }
+
+    #messages-sidebar h2 {
+      font-size: 20px;
+      background: rgba(0, 0, 0, 0.1);
+      padding: 10px;
+      margin-bottom: 20px;
+    }
+    
+    #messages-sidebar h3{
+      font-size: 20px;
+      margin-bottom: 15px;
+    }
+    
+    #messages-sidebar ul li{
+    background: rgba(167, 219, 243, 0.2);
+    font-size: 25px;
+    padding: 10px 0;
+    }
+    
+    .astro{
+      float: right;
+      left : 0px;
+      margin-left: -490px;
+      margin-top: 140px;
+      margin-bottom: 80px;
+      position: fixed;
+      
+      
+    }
+  #messages-display{
+    margin-top: 40px;
+    margin-bottom:20px;
+    width : 300px;
+    height: 300px;
+    border-radius: 15px;
+    margin-left:50px;
+    text-decoration-color: lightblue;
+    text-align: center;
+    background-color: whitesmoke;
+    
+  }
+
+
+
+  
+.join-main {
+	padding: 30px 40px;
+	background: var(--dark-color-b);
+}
+
+
+
+.join-main .form-control {
+	margin-bottom: 20px;
+}
+
+.join-main label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+.join-main input[type='text'] {
+	font-size: 16px;
+	padding: 5px;
+	height: 30px;
+	width: 100%;
+}
+/*
+  
+@media only screen and (min-width: 1200px) {
+  .lotty_1 {
+    margin-top: 10px;
+    margin-bottom: 50px;
+    margin-left: 0px;
+    padding-left: 0px;
+    padding-right: 60%;
+    padding-top: 0px;
+    padding-bottom: 0;
+    float: left;
+  }
+
+  .lotty_2 {
+    position: absolute;
+    padding-left: 20%;
+    margin-top: 200px;
+    padding-top: 0px;
+    margin-right: 100px;
+    float: right;
+  }
+
+
+  #start-select {
+    display: inline;
+  }
+  
+}*/
+
+@keyframes showHide{
+  100% {opacity: 0;}
+  50% {opacity: 0;}
+  0% {opacity: 1;}
+}
